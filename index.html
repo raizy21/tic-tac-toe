@@ -14,12 +14,16 @@
   </head>
 
   <body>
+    <!-- intro -->
     <header id="main-header">
       <img src="/assets/logo.png" alt="logo" />
       <h1>play tic, tac, toe</h1>
       <p>build with html, css, js and a lots of love</p>
       <p>enjoy the game!</p>
     </header>
+    <!-- end of intro -->
+
+    <!-- actually content -->
     <main>
       <!-- overlay-->
       <aside id="overlay">
@@ -63,6 +67,15 @@
 
       <!-- start of game board-->
       <section id="active-game">
+        <!-- game result -->
+        <article id="game-result">
+          <h3>
+            yow won the game! <span id="active-player-name"> player name </span>
+          </h3>
+          <button id="play-again">play again</button>
+        </article>
+        <!-- end of game restart -->
+
         <p>it is your turn <span id="active-player-name">player name</span></p>
 
         <!-- board -->
@@ -85,19 +98,14 @@
       </section>
       <!-- end of game board-->
 
-      <li>
-        <article>
-          <h2>player 1</h2>
-          <h3>player name</h3>
-          <p>x</p>
-          <button>edit</button>
-        </article>
-      </li>
-      <aside id="game-result">game result</aside>
       <aside id="game-restart">restart game</aside>
     </main>
+    <!-- end of actually content -->
+
+    <!-- final sugar text-->
     <footer>
       <p>&copy; 2025 tic tac toe. all rights reserved.</p>
     </footer>
+    <!-- end of final sugar text-->
   </body>
 </html>
