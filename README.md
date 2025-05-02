@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/logo.png" alt="Tic Tac Toe Logo" width="200" />
+</p>
+
 # 🎮 tic tac toe game
 
 a fun and simple tic tac toe game built with **html**, **css**, and **javascript** — no frameworks, just pure web magic and a lot of ❤️.
