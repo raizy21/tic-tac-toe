@@ -21,7 +21,23 @@
       <p>enjoy the game!</p>
     </header>
     <main>
-      <aside id="overlay">choose your name</aside>
+      <!-- overlay-->
+      <aside id="overlay">
+        <h2>choose your name</h2>
+        <form>
+          <div>
+            <label for="playername1">player name 1</label>
+            <input type="text" id="playername1" name="playername1" required />
+          </div>
+          <div>
+            <button type="button">cancel</button>
+            <button type="submit">submit</button>
+          </div>
+        </form>
+      </aside>
+      <!-- end of overlay -->
+
+      <!-- start of game config -->
       <section id="game-configuration">
         <ol>
           <li>
@@ -43,6 +59,8 @@
         </ol>
         <button id="start-game">start new game</button>
       </section>
+      <!-- end of game config -->
+
       <section id="active-game">board game</section>
       <aside id="game-result">game result</aside>
       <aside id="game-restart">restart game</aside>
