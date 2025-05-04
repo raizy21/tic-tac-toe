@@ -21,6 +21,12 @@ you can play with a friend! it's lightweight, responsive, and super easy to use 
 - game restart functionality
 - visual feedback for game result (win, lose, draw)
 
+## 🌐 live demo
+
+🎮 play the game here: [https://gentle-torrone-8fb767.netlify.app/](https://gentle-torrone-8fb767.netlify.app/)
+
+hosted for free with ❤️ on [Netlify](https://www.netlify.com/)
+
 ## 📁 project structure
 
 ```
@@ -31,9 +37,9 @@ tic-tac-toe/
 ├── styles/
 │ └── style.css # css styling
 ├── .gitignore # ignored files for git
+├── README.md # project documentation
 ├── index.html # main html file
-├── script.js # game logic (js)
-└── README.md # project documentation
+└── script.js # game logic (js)
 ```
 
 ## 🛠️ how to run it
