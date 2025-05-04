@@ -7,8 +7,10 @@
     <!-- fav_icon  -->
     <link rel="icon" type="image/png" href="/assets/favicon.png" />
 
-    <!-- css -->
+    <!-- css main-->
     <link rel="stylesheet" href="/styles/style.css" />
+    <!-- css overlay -->
+    <link rel="stylesheet" href="/styles/overlays.css" />
     <!-- script -->
     <script src="script.js" defer></script>
   </head>
@@ -26,14 +28,14 @@
     <!-- actually content -->
     <main>
       <!-- overlay-->
-      <aside id="overlay">
+      <aside class="overlay">
         <h2>choose your name</h2>
         <form>
           <div>
             <label for="player-name">player name </label>
             <input type="text" id="player-name" name="player-name" required />
           </div>
-          <div>
+          <div class="overlay-btns">
             <button type="button" class="btn btn-alt">cancel</button>
             <button type="submit" class="btn">submit</button>
           </div>
