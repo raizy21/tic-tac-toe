@@ -1,0 +1,35 @@
+#config-overlay {
+  text-align: center;
+}
+
+#config-overlay h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: var(--primary-color);
+}
+#config-overlay p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+#config-overlay form {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+#config-overlay form input {
+  font-size: 2rem;
+  padding: 0.5rem;
+  border: 1px solid var(--primary-color);
+  border-radius: 0.5rem;
+  background: var(--background-color);
+  color: var(--primary-color);
+}
+#config-overlay .overlay-btns {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+  gap: 2rem;
+}
