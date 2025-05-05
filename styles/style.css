@@ -84,7 +84,7 @@ body {
 
 .btn-alt {
   background-color: transparent;
-  border-color: transparent;
+  border-color: var(--primary-color);
   color: var(--primary-color);
 }
 
