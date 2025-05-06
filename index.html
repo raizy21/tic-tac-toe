@@ -40,12 +40,13 @@
       <aside class="overlay" id="config-overlay">
         <h2>choose your name</h2>
         <form>
-          <div>
+          <div class="form-control">
             <label for="player-name">player name </label>
-            <input type="text" id="player-name" name="player-name" required />
+            <input type="text" id="player-name" name="player-name" />
           </div>
+          <p id="config-errors"></p>
           <div class="overlay-btns">
-            <button type="button" class="btn btn-alt" id="cancel-config-btn">
+            <button type="reset" class="btn btn-alt" id="cancel-config-btn">
               cancel
             </button>
             <button type="submit" class="btn">submit</button>

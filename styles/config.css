@@ -37,6 +37,26 @@
 /* end of config */
 
 /* start of game configuration */
+.error label {
+  color: var(--error-color);
+  font-size: 2rem;
+  margin-top: 0.5rem;
+}
+
+.error input {
+  color: var(--error-color);
+  background-color: var(--error-color) !important;
+  font-size: 2.2rem;
+  margin-top: 0.5rem;
+  border: 1px solid var(--error-color);
+}
+
+#config-overlay #config-errors {
+  color: var(--error-color);
+  font-size: 2rem;
+  margin-top: 1.2rem;
+}
+
 #game-configuration {
   margin-top: 3rem auto;
   text-align: center;
