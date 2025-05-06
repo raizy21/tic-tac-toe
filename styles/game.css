@@ -65,3 +65,31 @@
   cursor: default;
   pointer-events: none;
 }
+
+#game-restart {
+  margin: 1rem auto;
+  padding: 0.5rem 1rem;
+  background-color: var(--accent-color);
+  color: var(--primary-color);
+  display: block; /* Ensure it's block-level */
+  width: calc(80% - 20rem);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  display: none;
+}
+
+#game-restart h2 {
+  margin: 0;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.restart-btns {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  align-items: center;
+  margin-top: 1rem;
+}
