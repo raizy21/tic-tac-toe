@@ -98,3 +98,15 @@ body {
   border-color: transparent;
   color: var(--accent-color);
 }
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  padding: 1rem 0;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
