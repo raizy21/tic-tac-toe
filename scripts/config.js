@@ -1,7 +1,9 @@
 // this file contains the configuration for the player
-function openPlayerConfig() {
+function openPlayerConfig(event) {
   console.log("openPlayerConfig function called");
 
+  const selectedPlayerId = +event.target.dataset.playerid;
+  editedPlayer = selectedPlayerId; // get the player id from the data attribute of the clicked button
   playerConfigOverlayElement.style.display = "block";
   backdropElement.style.display = "block";
 }
@@ -31,4 +33,11 @@ function savePlayerConfig(event) {
     errorOutputElement.textContent = "please enter a valid name!"; // if the player name is empty, show an error message
     return;
   }
+
+  const updatedPlayerDataElement = document.getElementById(
+    "player-" + editedPlayer + "-data"
+  ); // get the player data element from the DOM using the edited player id
+
+  updatedPlayerDataElement.querySelector("h3").textContent = enteredPlayerName; // update the player name in the UI
+  closePlayerConfig(); // close the configuration overlay
 }

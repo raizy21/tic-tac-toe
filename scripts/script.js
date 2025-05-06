@@ -1,6 +1,8 @@
 // console.log("checking if script is loaded");
 
 // selecting elements from the DOM
+let editedPlayer = 0;
+
 const playerConfigOverlayElement = document.getElementById("config-overlay");
 const backdropElement = document.getElementById("backdrop");
 
