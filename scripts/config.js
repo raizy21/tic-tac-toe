@@ -40,4 +40,12 @@ function savePlayerConfig(event) {
 
   updatedPlayerDataElement.children[1].textContent = enteredPlayerName; // update the player name in the UI
   closePlayerConfig(); // close the configuration overlay
+
+  if (editedPlayer === 1) {
+    players[0].name = enteredPlayerName; // update the player name in the players array
+  } else if (editedPlayer === 2) {
+    players[1].name = enteredPlayerName; // update the player name in the players array
+  } else {
+    console.log("invalid player id"); // if the player id is invalid, log an error message
+  }
 }

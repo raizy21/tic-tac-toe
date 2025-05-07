@@ -3,6 +3,12 @@
 // selecting elements from the DOM
 let editedPlayer = 0;
 
+//player ui elements
+const players = [
+  { name: "", symbol: "x" },
+  { name: "", symbol: "o" },
+];
+
 const playerConfigOverlayElement = document.getElementById("config-overlay");
 const backdropElement = document.getElementById("backdrop");
 
