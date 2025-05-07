@@ -38,6 +38,6 @@ function savePlayerConfig(event) {
     "player-" + editedPlayer + "-data"
   ); // get the player data element from the DOM using the edited player id
 
-  updatedPlayerDataElement.querySelector("h3").textContent = enteredPlayerName; // update the player name in the UI
+  updatedPlayerDataElement.children[1].textContent = enteredPlayerName; // update the player name in the UI
   closePlayerConfig(); // close the configuration overlay
 }
