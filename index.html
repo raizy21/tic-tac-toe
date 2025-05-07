@@ -18,6 +18,8 @@
 
     <!-- config game   -->
     <script src="/scripts/config.js" defer></script>
+    <!-- game logic -->
+    <script src="/scripts/game.js" defer></script>
     <!-- script -->
     <script src="/scripts/script.js" defer></script>
   </head>
@@ -87,7 +89,7 @@
             </article>
           </li>
         </ol>
-        <button id="start-game" class="btn">start new game</button>
+        <button id="start-game-btn" class="btn">start new game</button>
       </section>
       <!-- end of game config -->
 
@@ -108,17 +110,17 @@
         <ol id="game-board">
           <!-- 1 row -->
           <li></li>
-          <li class="disabled">x</li>
+          <li></li>
           <li></li>
 
           <!-- 2 row -->
-          <li class="disabled">x</li>
-          <li class="disabled">x</li>
-          <li class="disabled">o</li>
+          <li></li>
+          <li></li>
+          <li></li>
 
           <!-- 3 row -->
           <li></li>
-          <li class="disabled">o</li>
+          <li></li>
           <li></li>
         </ol>
       </section>
