@@ -16,6 +16,8 @@ function closePlayerConfig() {
   backdropElement.style.display = "none";
   formElement.firstElementChild.classList.remove("error"); // remove the error class from the first element of the form
   errorOutputElement.textContent = ""; // clear the error message
+
+  formElement.firstElementChild.lastElementChild.value = ""; // clear the input field in the form
 }
 
 function savePlayerConfig(event) {
@@ -39,13 +41,8 @@ function savePlayerConfig(event) {
   ); // get the player data element from the DOM using the edited player id
 
   updatedPlayerDataElement.children[1].textContent = enteredPlayerName; // update the player name in the UI
-  closePlayerConfig(); // close the configuration overlay
 
-  if (editedPlayer === 1) {
-    players[0].name = enteredPlayerName; // update the player name in the players array
-  } else if (editedPlayer === 2) {
-    players[1].name = enteredPlayerName; // update the player name in the players array
-  } else {
-    console.log("invalid player id"); // if the player id is invalid, log an error message
-  }
+  players[editedPlayer - 1].name = enteredPlayerName; // update the player name in the players array
+
+  closePlayerConfig(); // close the configuration overlay
 }
