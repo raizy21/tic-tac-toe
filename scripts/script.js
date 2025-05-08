@@ -2,6 +2,7 @@
 
 // selecting elements from the DOM
 let editedPlayer = 0;
+let activePlayer = 0;
 
 //player ui elements
 const players = [
@@ -23,6 +24,7 @@ const editPlayer2BtnElement = document.getElementById("edit-player-2-btn");
 const cancelConfigBtnElement = document.getElementById("cancel-config-btn");
 
 const startNewGameBtnElement = document.getElementById("start-game-btn");
+const gameBoardElement = document.getElementById("game-board");
 
 //event listeners
 editPlayer1BtnElement.addEventListener("click", openPlayerConfig);
@@ -34,3 +36,5 @@ backdropElement.addEventListener("click", closePlayerConfig);
 formElement.addEventListener("submit", savePlayerConfig);
 
 startNewGameBtnElement.addEventListener("click", startNewGame);
+
+gameBoardElement.addEventListener("click", selectGameField);
