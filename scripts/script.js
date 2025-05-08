@@ -18,6 +18,7 @@ const errorOutputElement = document.getElementById("config-errors");
 
 const gameAreaElement = document.getElementById("active-game");
 
+const activePlayerNameElement = document.querySelector("#active-player-name");
 const editPlayer1BtnElement = document.getElementById("edit-player-1-btn");
 const editPlayer2BtnElement = document.getElementById("edit-player-2-btn");
 
