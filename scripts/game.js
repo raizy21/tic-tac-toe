@@ -50,32 +50,27 @@ function selectGameField(event) {
 }
 
 function checkForGameOver() {
-  // check for a winner
-  if (
-    gameData[0][0] > 0 &&
-    gameData[0][0] === gameData[0][1] &&
-    gameData[0][1] === gameData[0][2]
-  ) {
-    console.log(gameData[0][0]);
-    return gameData[0][0];
-  }
-  if (
-    gameData[1][0] > 0 &&
-    gameData[1][0] === gameData[1][1] &&
-    gameData[1][1] === gameData[1][2]
-  ) {
-    console.log(gameData[1][0]);
-    return gameData[1][0];
-  }
-  if (
-    gameData[2][0] > 0 &&
-    gameData[2][0] === gameData[2][1] &&
-    gameData[2][1] === gameData[2][2]
-  ) {
-    console.log(gameData[2][0]);
-    return gameData[2][0];
+  // checking the rows for equality
+  for (let i = 0; i < 3; i++) {
+    if (
+      gameData[i][0] > 0 &&
+      gameData[i][0] === gameData[i][1] &&
+      gameData[i][1] === gameData[i][2]
+    ) {
+      // console.log(gameData[i][0]);
+      return gameData[i][0];
+    }
   }
 
-  // check for a draw
-  // check for a game over
+  // checking the columns for equality
+  for (let i = 0; i < 3; i++) {
+    if (
+      gameData[0][i] > 0 &&
+      gameData[0][i] === gameData[1][i] &&
+      gameData[1][i] === gameData[2][i]
+    ) {
+      // console.log(gameData[0][i]);
+      return gameData[0][i];
+    }
+  }
 }
