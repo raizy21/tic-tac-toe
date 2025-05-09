@@ -1,6 +1,6 @@
 // this file contains the configuration for the player
 function openPlayerConfig(event) {
-  console.log("openPlayerConfig function called");
+  // console.log("openPlayerConfig function called");
 
   const selectedPlayerId = +event.target.dataset.playerid;
   editedPlayer = selectedPlayerId; // get the player id from the data attribute of the clicked button
@@ -10,7 +10,7 @@ function openPlayerConfig(event) {
 
 // this function closes the player configuration overlay and the backdrop
 function closePlayerConfig() {
-  console.log("closePlayerConfig function called");
+  // console.log("closePlayerConfig function called");
 
   playerConfigOverlayElement.style.display = "none";
   backdropElement.style.display = "none";
@@ -21,14 +21,14 @@ function closePlayerConfig() {
 }
 
 function savePlayerConfig(event) {
-  console.log("savePlayerConfig function called");
+  // console.log("savePlayerConfig function called");
 
   event.preventDefault(); // prevent the form from submitting and reloading the page
-  console.log(event);
+  // console.log(event);
 
   const formData = new FormData(event.target); // get the form data from the event target
   const enteredPlayerName = formData.get("player-name").trim(); // get the player name from the form data and trim it
-  console.log(enteredPlayerName);
+  // console.log(enteredPlayerName);
 
   if (!enteredPlayerName) {
     event.target.firstElementChild.classList.add("error"); // add the error class to the first element of the form

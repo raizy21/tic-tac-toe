@@ -6,7 +6,7 @@ function startNewGame() {
   }
 
   activePlayerNameElement.textContent = players[activePlayer].name;
-  console.log(players[activePlayer].name);
+  // console.log(players[activePlayer].name);
   gameAreaElement.style.display = "block";
 }
 
@@ -23,7 +23,7 @@ function switchPlayer() {
 
 // select area on the game board
 function selectGameField(event) {
-  console.log(event.target.tagName);
+  // console.log(event.target.tagName);
 
   if (event.target.tagName !== "LI") {
     return;
@@ -42,7 +42,40 @@ function selectGameField(event) {
   event.target.classList.add("disabled");
 
   gameData[selectedRow][selectedColumn] = activePlayer + 1;
-  console.log(gameData);
+  // console.log(gameData);
+  const winnerId = checkForGameOver();
+  console.log(winnerId);
 
   switchPlayer();
+}
+
+function checkForGameOver() {
+  // check for a winner
+  if (
+    gameData[0][0] > 0 &&
+    gameData[0][0] === gameData[0][1] &&
+    gameData[0][1] === gameData[0][2]
+  ) {
+    console.log(gameData[0][0]);
+    return gameData[0][0];
+  }
+  if (
+    gameData[1][0] > 0 &&
+    gameData[1][0] === gameData[1][1] &&
+    gameData[1][1] === gameData[1][2]
+  ) {
+    console.log(gameData[1][0]);
+    return gameData[1][0];
+  }
+  if (
+    gameData[2][0] > 0 &&
+    gameData[2][0] === gameData[2][1] &&
+    gameData[2][1] === gameData[2][2]
+  ) {
+    console.log(gameData[2][0]);
+    return gameData[2][0];
+  }
+
+  // check for a draw
+  // check for a game over
 }
