@@ -1,5 +1,12 @@
 // console.log("checking if script is loaded");
 
+// game logic
+const fameData = [
+  [0, 0, 0],
+  [0, 0, 0],
+  [0, 0, 0],
+];
+
 // selecting elements from the DOM
 let editedPlayer = 0;
 let activePlayer = 0;
