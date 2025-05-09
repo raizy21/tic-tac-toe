@@ -1,7 +1,7 @@
 // console.log("checking if script is loaded");
 
 // game logic
-const fameData = [
+const gameData = [
   [0, 0, 0],
   [0, 0, 0],
   [0, 0, 0],
