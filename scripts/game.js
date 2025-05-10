@@ -73,4 +73,26 @@ function checkForGameOver() {
       return gameData[0][i];
     }
   }
+
+  // checking the diagonals for equality: top left to bottom right
+  if (
+    gameData[0][0] > 0 &&
+    gameData[0][0] === gameData[1][1] &&
+    gameData[1][1] === gameData[2][2]
+  ) {
+    // console.log(gameData[0][0]);
+    return gameData[0][0];
+  }
+
+  // checking the diagonals for equality: left to top right
+  if (
+    gameData[2][0] > 0 &&
+    gameData[2][0] === gameData[1][1] &&
+    gameData[1][1] === gameData[0][2]
+  ) {
+    // console.log(gameData[2][0]);
+    return gameData[2][0];
+  }
+
+  return 0;
 }
