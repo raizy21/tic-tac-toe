@@ -44,7 +44,11 @@ function selectGameField(event) {
   gameData[selectedRow][selectedColumn] = activePlayer + 1;
   // console.log(gameData);
   const winnerId = checkForGameOver();
-  console.log(winnerId);
+  // console.log(winnerId);
+
+  if (winnerId !== 0) {
+    endGame(winnerId);
+  }
 
   // increasing the round
   currentRound++;
@@ -102,4 +106,15 @@ function checkForGameOver() {
     return -1;
   }
   return 0;
+}
+
+function endGame(winnerId) {
+  gameOverTextElement.style.display = "block";
+
+  if (winnerId > 0) {
+    const winnerName = players[winnerId - 1].name;
+    gameOverWinnerElement.textContent = winnerName + " wins!";
+  } else {
+    gameOverTextElement.textContent = "it is a draw!";
+  }
 }
