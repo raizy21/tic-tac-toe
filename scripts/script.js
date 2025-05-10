@@ -10,6 +10,7 @@ const gameData = [
 // selecting elements from the DOM
 let editedPlayer = 0;
 let activePlayer = 0;
+let currentRound = 1;
 
 //player ui elements
 const players = [
