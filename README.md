@@ -43,6 +43,9 @@ tic-tac-toe/
 │ ├── game.css # styles for the main game board
 │ ├── overlays.css # styles for  overlays
 │ └── style.css # global styles - base layout
+├── tests/
+│   ├── config.test.js  # tests for player configuration
+│   └── game.test.js    # tests for game logic
 ├── .gitignore # ignored files for git
 ├── README.md # project documentation
 ├── index.html # main html file
@@ -63,3 +66,19 @@ tic-tac-toe/
 ## 🙌 credits
 
 built by [raizy21](https://github.com/raizy21) with lots of curiosity and love for the web 💻✨
+
+## 🧪 testing
+
+this project uses **jest** for unit testing, ensuring the core game logic and player configuration work as expected.
+
+### 🚀 how to run tests
+
+1. make sure you have **node.js** installed
+2. install dependencies:
+
+   ````bash
+   npm install```
+   ````
+
+3. run the tests:
+   `npm test`
