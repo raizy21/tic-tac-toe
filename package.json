@@ -1,0 +1,28 @@
+{
+  "name": "tic-tac-toe",
+  "version": "1.0.0",
+  "description": "tic tac toe game with configuration and winner, draw feedback",
+  "keywords": [
+    "simple",
+    "game"
+  ],
+  "homepage": "https://github.com/raizy21/tic-tac-toe#readme",
+  "bugs": {
+    "url": "https://github.com/raizy21/tic-tac-toe/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raizy21/tic-tac-toe.git"
+  },
+  "license": "MIT",
+  "author": "andrei",
+  "type": "module",
+  "main": "index.html",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0"
+  }
+}
