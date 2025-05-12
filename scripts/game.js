@@ -1,9 +1,35 @@
+// reset the game data
+function resetGameStatus() {
+  gameOverElement.style.display = "none";
+
+  activePlayer = 0;
+  currentRound = 1;
+  gameIsOver = false;
+  // gameOverTextElement.innerHTML =
+  //   'you won the game! <span id="winner-name"> player name </span>';
+
+  let gameBoardIndex = 0;
+  for (let i = 0; i < 3; i++) {
+    for (let j = 0; j < 3; j++) {
+      gameData[i][j] = 0;
+      const gameBoardItem = gameBoardElement.children[gameBoardIndex];
+      gameBoardItem.textContent = "";
+      gameBoardItem.classList.remove("disabled");
+
+      gameBoardIndex++;
+    }
+  }
+}
+
 // display the game area
 function startNewGame() {
   if (players[0].name === "" || players[1].name === "") {
     alert("please set custom player names for both players!");
     return;
   }
+
+  // reset the game data
+  resetGameStatus();
 
   activePlayerNameElement.textContent = players[activePlayer].name;
   // console.log(players[activePlayer].name);
@@ -25,7 +51,7 @@ function switchPlayer() {
 function selectGameField(event) {
   // console.log(event.target.tagName);
 
-  if (event.target.tagName !== "LI") {
+  if (event.target.tagName !== "LI" || gameIsOver) {
     return;
   }
 
@@ -109,6 +135,7 @@ function checkForGameOver() {
 }
 
 function endGame(winnerId) {
+  gameIsOver = true;
   gameOverElement.style.display = "block";
 
   // gameOverWinnerElement
