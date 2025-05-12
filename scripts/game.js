@@ -141,6 +141,7 @@ function endGame(winnerId) {
   // gameOverWinnerElement
   if (winnerId > 0) {
     const winnerName = players[winnerId - 1].name;
+    console.log(winnerName);
     gameOverWinnerElement.textContent = winnerName + " wins!";
   } else {
     gameOverTextElement.textContent = "it is a draw!";
