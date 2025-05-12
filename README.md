@@ -31,11 +31,18 @@ hosted for free with ❤️ on [Netlify](https://www.netlify.com/)
 
 ```
 tic-tac-toe/
-├── assets/
+├── assets/ # contains images like the game logo and favicon for branding
 │ ├── logo.png # game logo
 │ └── favicon.png # browser favicon
-├── styles/
-│ └── style.css # css styling
+├── scripts/  # contains js code for this project
+│ ├── config.js # game configuration
+│ ├── game.js # core game logic
+│ └── script.js # main script with selectors
+├── styles/   # contains css code for this project
+│ ├── config.css # styles for configuration screens
+│ ├── game.css # styles for the main game board
+│ ├── overlays.css # styles for  overlays
+│ └── style.css # global styles - base layout
 ├── .gitignore # ignored files for git
 ├── README.md # project documentation
 ├── index.html # main html file
