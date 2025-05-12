@@ -49,7 +49,10 @@ tic-tac-toe/
 ├── .gitignore # ignored files for git
 ├── README.md # project documentation
 ├── index.html # main html file
-└── script.js # game logic (js)
+├── script.js # game logic (js)
+├── jest.config.js # jest configuration file (for ES6 module support)
+├── package-lock.json # version-locked package information
+└── package.json # project dependencies and scripts
 ```
 
 ## 🛠️ how to run it
@@ -82,3 +85,35 @@ this project uses **jest** for unit testing, ensuring the core game logic and pl
 
 3. run the tests:
    `npm test`
+
+### 📦 devDependencies
+
+| Dependency                 | Version                                                                                             | Description                                                                           | More Info |
+| -------------------------- | --------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- | --------- |
+| **jest**                   | A powerful testing framework for JavaScript, used for writing unit tests and ensuring code quality. | [Jest Documentation](https://jestjs.io/docs/getting-started)                          |
+| **jest-environment-jsdom** | A **jsdom** environment for Jest, providing a browser-like DOM for testing web applications.        | [Jest jsdom Environment](https://jestjs.io/docs/configuration#testenvironment-string) |
+
+---
+
+### 🔗 project resources
+
+- **JavaScript Fundamentals**
+
+  - [MDN JavaScript Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide) - Complete guide to JavaScript basics and advanced topics.
+  - [JavaScript.info](https://javascript.info/) - Modern JavaScript tutorial with practical examples.
+
+- **Web Development Basics**
+
+  - [MDN Web Docs - HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) - Everything you need to know about HTML.
+  - [MDN Web Docs - CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) - Comprehensive guide to styling web pages.
+  - [CSS Tricks](https://css-tricks.com/) - Tips, tricks, and techniques on using CSS effectively.
+
+- **Testing**
+
+  - [Jest Documentation](https://jestjs.io/docs/getting-started) - Official Jest documentation for writing and running tests.
+  - [Jest jsdom Environment](https://jestjs.io/docs/configuration#testenvironment-string) - Guide to using jsdom with Jest.
+  - [Testing JavaScript Applications](https://testingjavascript.com/) - Advanced testing techniques for front-end developers.
+
+- **Deployment**
+
+  - [Netlify](https://www.netlify.com/) - Free and easy way to host your project.
