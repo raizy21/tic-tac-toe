@@ -28,7 +28,7 @@ const activePlayerNameElement = document.querySelector("#active-player-name");
 
 const gameOverElement = document.getElementById("game-over");
 const gameOverWinnerElement = document.getElementById("winner-name");
-const gameOverTextElement = document.getElementById("game-over-text");
+const gameOverTextElement = document.querySelector(".game-over-text");
 
 const editPlayer1BtnElement = document.getElementById("edit-player-1-btn");
 const editPlayer2BtnElement = document.getElementById("edit-player-2-btn");
