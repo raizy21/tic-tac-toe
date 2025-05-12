@@ -12,6 +12,16 @@ this is a browser-based implementation of the classic tic tac toe game. two play
 
 you can play with a friend! it's lightweight, responsive, and super easy to use — just open and play.
 
+### 🎥 demo video and gif
+
+for a quick preview, check out the **GIF** version:
+
+![tic tac toe demo](/assets/demo.gif)
+
+or watch the full **MP4** version for better quality:
+
+[🎥 watch full demo](/assets/tic-tac-toe.mp4)
+
 ## 🚀 features
 
 - clean and responsive layout
@@ -33,7 +43,9 @@ hosted for free with ❤️ on [Netlify](https://www.netlify.com/)
 tic-tac-toe/
 ├── assets/ # contains images like the game logo and favicon for branding
 │ ├── logo.png # game logo
-│ └── favicon.png # browser favicon
+│ ├── demo.gif # video for this project
+│ ├── favicon.png # browser favicon
+│ └── tic-tac-toe.mp4 video about this project
 ├── scripts/  # contains js code for this project
 │ ├── config.js # game configuration
 │ ├── game.js # core game logic
