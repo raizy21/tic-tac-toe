@@ -109,8 +109,9 @@ function checkForGameOver() {
 }
 
 function endGame(winnerId) {
-  gameOverTextElement.style.display = "block";
+  gameOverElement.style.display = "block";
 
+  // gameOverWinnerElement
   if (winnerId > 0) {
     const winnerName = players[winnerId - 1].name;
     gameOverWinnerElement.textContent = winnerName + " wins!";

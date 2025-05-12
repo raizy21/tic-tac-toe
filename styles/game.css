@@ -93,3 +93,8 @@
   align-items: center;
   margin-top: 1rem;
 }
+
+#winner-name {
+  font-weight: bold;
+  font-size: 2rem;
+}
